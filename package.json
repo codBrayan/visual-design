@@ -1,0 +1,12 @@
+{
+  "name": "visual-design-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fotos": "node scripts/otimizar-fotos.mjs",
+    "dev": "npx --yes serve ."
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
+  }
+}
