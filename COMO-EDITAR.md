@@ -36,19 +36,19 @@ e abra o endereço que aparecer.
     {
       "arquivo": "img/trabalhos/geladeira-preta.webp",
       "legenda": "Geladeira envelopada em preto fosco",
-      "categoria": "moveis"
+      "categoria": "decorativo"
     },
     {
       "arquivo": "img/trabalhos/vitrine-loja.webp",
       "legenda": "Adesivo de vitrine",
-      "categoria": "adesivos"
+      "categoria": "vitrines"
     }
   ]
 }
 ```
 
 - A ordem no JSON é a ordem no site. Coloque as melhores primeiro.
-- `categoria` precisa ser uma das chaves de `categorias`: `moveis`, `pelicula`, `papel`, `adesivos`.
+- `categoria` precisa ser uma das chaves de `categorias`: `decorativo`, `automotivo`, `vitrines`, `pelicula`, `fachadas`.
 - A `legenda` também vira o texto alternativo da imagem (acessibilidade e Google). Descreva o que aparece.
 - Os filtros aparecem sozinhos quando existem fotos de pelo menos 2 categorias.
 - Se o JSON tiver um erro (vírgula sobrando é o clássico), a galeria mostra o aviso do Instagram e o erro aparece no console (F12). Dá pra validar em jsonlint.com.

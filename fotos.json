@@ -1,9 +1,10 @@
 {
   "categorias": {
-    "moveis": "Móveis e eletros",
+    "decorativo": "Móveis e cozinhas",
+    "automotivo": "Automotivo",
+    "vitrines": "Vitrines",
     "pelicula": "Película",
-    "papel": "Papel de parede",
-    "adesivos": "Adesivos"
+    "fachadas": "Fachadas"
   },
   "fotos": []
 }

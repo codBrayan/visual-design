@@ -3,22 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Visual Design | Envelopamento e adesivos em Passo Fundo</title>
-  <meta name="description" content="Envelopamento de móveis e eletros, película residencial, papel de parede e adesivos personalizados em Passo Fundo e região. Orçamento pelo WhatsApp.">
-  <meta name="theme-color" content="#1E1B4B">
+  <title>Visual Design | Comunicação visual em Passo Fundo</title>
+  <meta name="description" content="Envelopamento decorativo e automotivo, adesivos para vitrines, película residencial e restauração de fachadas em Passo Fundo e região. Orçamento pelo WhatsApp.">
+  <meta name="theme-color" content="#05070F">
 
   <!-- Prévia quando o link é compartilhado no WhatsApp/Instagram -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Visual Design | Comunicação visual em Passo Fundo">
-  <meta property="og:description" content="Envelopamento, película residencial, papel de parede e adesivos personalizados.">
+  <meta property="og:description" content="Envelopamento decorativo e automotivo, vitrines, película residencial e fachadas.">
   <meta property="og:image" content="img/logo-macaco.png">
   <meta property="og:locale" content="pt_BR">
 
   <link rel="icon" href="img/logo-macaco.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,800;100,900;125,800;125,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js")</script>
 
   <!-- Dados estruturados: ajudam o Google a mostrar a empresa em buscas locais -->
   <script type="application/ld+json">
@@ -26,7 +27,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Visual Design",
-    "description": "Envelopamento de móveis e eletros, película residencial, papel de parede e adesivos personalizados.",
+    "description": "Envelopamento decorativo e automotivo, adesivos para vitrines, película residencial e restauração de fachadas.",
     "telephone": "+55 54 99271-5783",
     "areaServed": "Passo Fundo e região, RS",
     "address": { "@type": "PostalAddress", "addressLocality": "Passo Fundo", "addressRegion": "RS", "addressCountry": "BR" },
@@ -37,79 +38,101 @@
 <body>
   <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
+  <!-- Céu estrelado do logo, desenhado pelo js/animacoes.js -->
+  <canvas class="estrelas" aria-hidden="true"></canvas>
+
   <header class="topo">
-    <a class="marca" href="#" aria-label="Visual Design, início">
-      <img src="img/logo-macaco.png" alt="" width="44" height="44">
-      <span>Visual Design</span>
-    </a>
-    <nav aria-label="Principal">
-      <a href="#servicos">Serviços</a>
-      <a href="#trabalhos">Trabalhos</a>
-      <a href="#contato">Contato</a>
-    </nav>
+    <div class="topo-dentro">
+      <a class="marca" href="#" aria-label="Visual Design, início">
+        <img src="img/logo-macaco.png" alt="" width="40" height="40">
+        <span>Visual Design</span>
+      </a>
+      <nav aria-label="Principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#arquitetos">Arquitetos</a>
+        <a href="#trabalhos">Trabalhos</a>
+        <a class="nav-cta" data-whats href="https://wa.me/5554992715783">Orçamento</a>
+      </nav>
+    </div>
   </header>
 
   <main id="conteudo">
-    <!-- HERO: o "adesivo" com canto descolando é o elemento marcante do site -->
+    <!-- HERO: o macaco com brilho neon, igual ao logo -->
     <section class="hero">
-      <div class="hero-texto">
-        <h1>Cara nova pro que você já tem.</h1>
-        <p>Envelopamos móveis e eletros, aplicamos película, papel de parede e adesivos sob medida em Passo Fundo e região.</p>
-        <a class="btn" data-whats href="https://wa.me/5554992715783">Pedir orçamento no WhatsApp</a>
+      <div class="hero-logo" aria-hidden="true">
+        <div class="halo"></div>
+        <img src="img/logo-macaco.png" alt="" width="228" height="236">
       </div>
-
-      <div class="adesivo" aria-hidden="true">
-        <div class="adesivo-fundo"></div>
-        <div class="adesivo-face">
-          <img src="img/logo-macaco.png" alt="" width="228" height="236">
-        </div>
-        <div class="adesivo-canto"></div>
+      <p class="hero-nome cromado">VISUAL DESIGN</p>
+      <p class="tagline">Comunicação visual</p>
+      <h1>Transformamos superfícies em <span class="destaque">identidade</span>.</h1>
+      <p class="hero-sub">Envelopamento decorativo e automotivo, vitrines, película residencial e fachadas em Passo Fundo e região.</p>
+      <div class="hero-acoes">
+        <a class="btn" data-whats href="https://wa.me/5554992715783">Pedir orçamento</a>
+        <a class="btn btn-contorno" href="#servicos">Ver serviços</a>
       </div>
+      <a class="rolar" href="#servicos" aria-label="Rolar para os serviços"><span></span></a>
     </section>
 
-    <section id="servicos" class="servicos" aria-labelledby="t-servicos">
-      <h2 id="t-servicos">O que a gente aplica</h2>
-      <ul class="lista-servicos">
-        <li style="--cor: var(--ciano)">
-          <h3>Envelopamento de móveis e eletros</h3>
-          <p>Geladeira, armário, mesa, porta. Troca a cor ou o acabamento sem pintar e sem comprar outro.</p>
+    <!-- Faixa rolando sem parar -->
+    <div class="faixa" aria-hidden="true">
+      <div class="faixa-trilho">
+        <span>Envelopamento</span><span>Vitrines</span><span>Película</span><span>Fachadas</span><span>Automotivo</span><span>Cozinhas</span>
+        <span>Envelopamento</span><span>Vitrines</span><span>Película</span><span>Fachadas</span><span>Automotivo</span><span>Cozinhas</span>
+      </div>
+    </div>
+
+    <section id="servicos" class="secao" aria-labelledby="t-servicos">
+      <p class="rotulo revelar">Serviços</p>
+      <h2 id="t-servicos" class="revelar">O que a gente faz</h2>
+      <ul class="cards">
+        <li class="card card-grande revelar">
+          <span class="card-num">01</span>
+          <h3>Envelopamentos decorativos</h3>
+          <p>Reforma de móveis, cozinhas, portas e eletros com vinil amadeirado, mármore, fosco ou metalizado. Visual novo sem obra e sem trocar o móvel.</p>
         </li>
-        <li style="--cor: var(--rosa)">
+        <li class="card revelar">
+          <span class="card-num">02</span>
+          <h3>Envelopamento automotivo</h3>
+          <p>Mudança de cor, detalhes e proteção da pintura original.</p>
+        </li>
+        <li class="card revelar">
+          <span class="card-num">03</span>
+          <h3>Adesivos para vitrines</h3>
+          <p>Sua marca vendendo na vitrine, criada e aplicada sob medida.</p>
+        </li>
+        <li class="card revelar">
+          <span class="card-num">04</span>
           <h3>Película residencial</h3>
-          <p>Controle de calor, privacidade e proteção UV pra janelas e portas de vidro.</p>
+          <p>Controle de calor, privacidade e proteção UV para vidros.</p>
         </li>
-        <li style="--cor: var(--amarelo)">
-          <h3>Papel de parede</h3>
-          <p>Uma parede de destaque ou o ambiente inteiro, com aplicação limpa e sem bolha.</p>
-        </li>
-        <li style="--cor: var(--tinta)">
-          <h3>Adesivos personalizados</h3>
-          <p>Fachada, vitrine, logomarca, decoração. Você manda a ideia, a gente cria e aplica.</p>
+        <li class="card revelar">
+          <span class="card-num">05</span>
+          <h3>Restauração de fachadas</h3>
+          <p>Fachada renovada e com a identidade da empresa em dia.</p>
         </li>
       </ul>
     </section>
 
-    <section class="porque" aria-labelledby="t-porque">
-      <h2 id="t-porque">Por que envelopar em vez de trocar</h2>
-      <div class="porque-itens">
-        <div>
-          <h3>Custa menos</h3>
-          <p>Sai bem mais barato que pintura completa ou móvel novo, principalmente em acabamentos personalizados.</p>
-        </div>
-        <div>
-          <h3>Muita opção</h3>
-          <p>Cores lisas, amadeirado, mármore, fosco, metalizado. E dá pra trocar de novo quando enjoar.</p>
-        </div>
-        <div>
-          <h3>Dura anos</h3>
-          <p>Vinil de qualidade aguenta o uso do dia a dia e protege a superfície original por baixo.</p>
-        </div>
+    <section id="arquitetos" class="secao arquitetos" aria-labelledby="t-arq">
+      <div class="arq-texto">
+        <p class="rotulo revelar">Para arquitetos e designers</p>
+        <h2 id="t-arq" class="revelar">Seu projeto, executado com acabamento de fábrica.</h2>
+        <p class="revelar">Reforma de móveis e cozinhas sem quebra-quebra, sem cheiro de tinta e em poucos dias. A gente segue a sua especificação de cor e textura.</p>
       </div>
+      <ul class="numeros">
+        <li class="revelar"><strong>Sem obra</strong><span>Nada de quebra-quebra nem pó pela casa.</span></li>
+        <li class="revelar"><strong>Rápido</strong><span>Ambiente pronto em poucos dias, sem cheiro de tinta.</span></li>
+        <li class="revelar"><strong>Reversível</strong><span>Enjoou da cor? Dá pra trocar de novo.</span></li>
+      </ul>
     </section>
 
-    <section id="trabalhos" class="trabalhos" aria-labelledby="t-trabalhos">
+    <section id="trabalhos" class="secao" aria-labelledby="t-trabalhos">
       <div class="trabalhos-cabeca">
-        <h2 id="t-trabalhos">Trabalhos</h2>
+        <div>
+          <p class="rotulo revelar">Portfólio</p>
+          <h2 id="t-trabalhos" class="revelar">Trabalhos</h2>
+        </div>
         <div class="filtros" role="group" aria-label="Filtrar trabalhos"></div>
       </div>
       <ul class="galeria" aria-live="polite"></ul>
@@ -119,12 +142,12 @@
       </p>
     </section>
 
-    <section id="contato" class="contato" aria-labelledby="t-contato">
-      <h2 id="t-contato">Bora orçar?</h2>
+    <section id="contato" class="secao contato revelar" aria-labelledby="t-contato">
+      <h2 id="t-contato">Bora dar cara nova pro seu espaço?</h2>
       <p>Manda uma foto do que você quer mudar e a gente responde com ideia e preço.</p>
-      <div class="contato-acoes">
-        <a class="btn btn-claro" data-whats href="https://wa.me/5554992715783">Chamar no WhatsApp</a>
-        <a class="link-claro" href="https://www.instagram.com/visualdesignpf/">@visualdesignpf no Instagram</a>
+      <div class="hero-acoes">
+        <a class="btn" data-whats href="https://wa.me/5554992715783">Chamar no WhatsApp</a>
+        <a class="btn btn-contorno" href="https://www.instagram.com/visualdesignpf/">@visualdesignpf</a>
       </div>
       <dl class="contato-dados">
         <div><dt>Telefone</dt><dd><a href="tel:+5554992715783">(54) 99271-5783</a></dd></div>
@@ -134,7 +157,7 @@
   </main>
 
   <footer class="rodape">
-    <p>Visual Design, comunicação visual em Passo Fundo, RS.</p>
+    <p>Visual Design · Comunicação visual · Passo Fundo, RS</p>
     <p>© <span id="ano">2026</span></p>
   </footer>
 
@@ -149,5 +172,6 @@
   </dialog>
 
   <script src="js/galeria.js" defer></script>
+  <script src="js/animacoes.js" defer></script>
 </body>
 </html>
